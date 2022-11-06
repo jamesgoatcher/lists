@@ -1,0 +1,36 @@
+<div class="list__view">
+	<div class="list__inputs">
+		<div class="list__dividers">
+			<div>
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" class="input__game">
+				<label for="nostalgia">Nostalgia</label>
+				<input type="number" name="nostalgia" id="nostalgia" class="input__game_rating" min="1" max="10">
+				<label for="story">Story</label>
+				<input type="number" name="story" id="story" class="input__game_rating" min="1" max="10">
+				<label for="music">Music</label>
+				<input type="number" name="music" id="music" class="input__game_rating" min="1" max="10">
+			</div>
+			<div>
+				<label for="image_url">Image URL</label>
+				<input type="text" name="image_url" id="image_url" class="input__game" placeholder="Optional">
+				<label for="replay">Replay</label>
+				<input type="number" name="replay" id="replay" class="input__game_rating" min="1" max="10">
+				<label for="art_direction">Art Direction</label>
+				<input type="number" name="art_direction" id="art_direction" class="input__game_rating" min="1" max="10">
+				<label for="mechanics">Mechanics</label>
+				<input type="number" name="mechanics" id="mechanics" class="input__game_rating" min="1" max="10">
+			</div>
+		</div>
+		<div class="list__controls">
+			<button id="set_game_values" class="lists__btn">Add item</button>
+			<button id="save_return" class="lists__btn">Save &amp; exit</button>
+		</div>
+	</div>
+	<div id="list_title"></div>
+	<table id="game_list"></table>
+	<div id="input_validation__error" class="hide input__error">One or more fields is empty</div>
+	<div id="names_validation__error" class="hide input__error">Name already exists in list</div>
+	<div id="imageURL_validation__error" class="hide input__error">Image URL must have proper protocol and be a valid file type</div>
+	<div class="hide error__overlay"></div>
+</div>

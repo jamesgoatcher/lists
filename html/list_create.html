@@ -1,0 +1,25 @@
+<div id="list_create--labels">
+	<input type="text" placeholder="List Name" name="new_list_name" id="new_list_name" class="list_create__input">
+	<input type="text" placeholder="Item Criteria 1" id="weight__container--1" class="weight__container" name="">
+	<input type="text" placeholder="Item Criteria 2" id="weight__container--2" class="weight__container" name="">
+	<input type="text" placeholder="Item Criteria 3" id="weight__container--3" class="weight__container" name="">
+	<input type="text" placeholder="Item Criteria 4" id="weight__container--4" class="weight__container" name="">
+	<input type="text" placeholder="Item Criteria 5" id="weight__container--5" class="weight__container" name="">
+	<input type="text" placeholder="Item Criteria 6" id="weight__container--6" class="weight__container" name="">
+	<button id="new_list_create" class="lists__btn">Generate list</button>
+</div>
+<div id="list_create">
+	<div class="weights__header">Weighting (%)</div>
+	<input type="hidden" name="new_list_uid" id="new_list_uid">
+	<input type="number" value="30" placeholder="Nostalgia Weight" id="nostalgia--weight" class="input__game_weight">
+	<input type="number" value="18" placeholder="Story Weight" id="story--weight" class="input__game_weight">
+	<input type="number" value="16" placeholder="Music Weight" id="music--weight" class="input__game_weight">
+	<input type="number" value="14" placeholder="Replay Weight" id="replay--weight" class="input__game_weight">
+	<input type="number" value="12" placeholder="Art Direction Weight" id="art_direction--weight" class="input__game_weight">
+	<input type="number" value="10" placeholder="Mechanics Weight" id="mechanics--weight" class="input__game_weight">
+	<div id="weighting_total">100%</div>
+</div>
+<div id="input_validation__error" class="hide input__error">One or more fields is empty</div>
+<div id="weight_validation__error" class="hide input__error">Weights must equal 100%</div>
+<div id="names_validation__error" class="hide input__error">Name already exists in list</div>
+<div class="hide error__overlay"></div>
